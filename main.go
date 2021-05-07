@@ -5,16 +5,15 @@ import (
 	"strings"
 )
 
-func lenAndUpper(name string) (int, string) {
-	return len(name), strings.ToUpper(name)
-}
-
-func repeatME(words ...string) {
-
-	fmt.Println(words)
+func lenAndUpper(name string) (length int, uppercase string) {
+	defer fmt.Println("I'm done")
+	length = len(name)
+	uppercase = strings.ToUpper(name)
+	return
 }
 
 func main() {
-	repeatME("2", "3", "4", "5")
+	totalLength, up := lenAndUpper("nico")
+	fmt.Println(totalLength, up)
 
 }
