@@ -4,9 +4,8 @@ import "fmt"
 
 func main() {
 
-	a := 2
-	b := &a
+	names := []string{"ni", "ci", "ki"}
+	names = append(names, "ka")
 
-	fmt.Println(&a, *b)
-
+	fmt.Println(names)
 }
